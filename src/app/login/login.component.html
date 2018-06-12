@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="card"><label routerLink="/register" style="cursor:pointer;color:#888;text-align: center;">Login</label>
+    <div class="card-body">
+        <input class="form-control" [(ngModel)]="Fdata.user">
+        <input type="password" class="form-control" [(ngModel)]="Fdata.pwd">
+        <button class="btn btn-success" (click)="submit();">submit</button>
+        <input class="form-control" disabled [(ngModel)]="datatest">
+    </div>
+  </div>
+</div>
