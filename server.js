@@ -8,10 +8,6 @@ const api = require('./app/routes/api');
 const user = require('./app/routes/routes');
 const models = require('./models');
 
-// models.users.findOne().then(response =>{
-//   console.log(response.dataValues);
-// })
-
 models.product.findAll().then(response => {
     var data = [];
     response.forEach(dataValues => {
